@@ -515,7 +515,7 @@ class FoxESSPVPower(CoordinatorEntity, SensorEntity):
         _LOGGER.debug(f"Initing Entity - PV{stringNo} Power")
         self.dataName = f"pv{stringNo}Power"
         self._attr_name = f"{name} - PV{stringNo} Power"
-        self._attr_unique_id = f"{deviceID}pv{stringNo}1-power"
+        self._attr_unique_id = f"{deviceID}pv{stringNo}-power"
         self.status = namedtuple(
             "status",
             [
